@@ -15,7 +15,7 @@ namespace intra_models
         private string contactinfo;
         private string picturepath;
 
-
+        public int index;
         public string Name
         {
             get => name;

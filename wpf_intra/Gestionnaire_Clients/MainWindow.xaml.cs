@@ -80,12 +80,40 @@ namespace Gestionnaire_Clients
 
             CurrentClient = Client[0];
             MaxIndex = Client.Count - 1;
-
+            CurrentClient.index++;
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             CurrentClient = new Client();
             Client.Add(CurrentClient);
+        }
+
+        private void Button_Click_Supprimer(object sender, RoutedEventArgs e)
+        {
+          
+
+            for (int i = 0; i < MaxIndex; i++)
+            {
+                if (Client[i] == currentClient)
+                {
+                    CurrentClient.Name = "";
+                    CurrentClient.LastName = "";
+                    CurrentClient.Address = "";
+                    CurrentClient.City = "";
+                    CurrentClient.Province = "";
+                    CurrentClient.PostalCode = "";
+                    CurrentClient.PicturePath = "";
+                    CurrentClient.ContactInfo = "";
+                    
+                }
+                if (Client[0] == currentClient)
+                {
+
+                   
+                }
+                
+            }
+
         }
     }
 }
