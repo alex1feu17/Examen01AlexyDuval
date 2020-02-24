@@ -101,7 +101,7 @@
                 <TextBlock Text="Liste des clients"></TextBlock>
             </Label>
             <StackPanel Grid.Row="0" Grid.Column="1">
-                <Button >Nouveau client</Button>
+                <Button >Nouveau client </Button>
             </StackPanel>
 
             <ListView Grid.ColumnSpan="2" Margin="0,26,0,35" Grid.RowSpan="3"/>
