@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {}
+    ".NETCoreApp,Version=v3.0": {
+      "intra_models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/intra_models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/intra_models.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "intra_models/1.0.0": {
+      "type": "project",
+      "path": "../intra_models/intra_models.csproj",
+      "msbuildProject": "../intra_models/intra_models.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": []
+    ".NETCoreApp,Version=v3.0": [
+      "intra_models >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\1751039\\.nuget\\packages\\": {}
@@ -32,7 +51,11 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\0ss_intra\\Duval\\wpf_intra\\intra_models\\intra_models.csproj": {
+              "projectPath": "C:\\0ss_intra\\Duval\\wpf_intra\\intra_models\\intra_models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

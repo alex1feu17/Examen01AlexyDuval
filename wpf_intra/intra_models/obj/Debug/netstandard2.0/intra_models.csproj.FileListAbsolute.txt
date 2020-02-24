@@ -1,0 +1,8 @@
+C:\0ss_intra\Duval\wpf_intra\intra_models\obj\Debug\netstandard2.0\intra_models.csprojAssemblyReference.cache
+C:\0ss_intra\Duval\wpf_intra\intra_models\obj\Debug\netstandard2.0\intra_models.AssemblyInfoInputs.cache
+C:\0ss_intra\Duval\wpf_intra\intra_models\obj\Debug\netstandard2.0\intra_models.AssemblyInfo.cs
+C:\0ss_intra\Duval\wpf_intra\intra_models\bin\Debug\netstandard2.0\intra_models.deps.json
+C:\0ss_intra\Duval\wpf_intra\intra_models\bin\Debug\netstandard2.0\intra_models.dll
+C:\0ss_intra\Duval\wpf_intra\intra_models\bin\Debug\netstandard2.0\intra_models.pdb
+C:\0ss_intra\Duval\wpf_intra\intra_models\obj\Debug\netstandard2.0\intra_models.dll
+C:\0ss_intra\Duval\wpf_intra\intra_models\obj\Debug\netstandard2.0\intra_models.pdb

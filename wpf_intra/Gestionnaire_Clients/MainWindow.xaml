@@ -6,7 +6,117 @@
         xmlns:local="clr-namespace:Gestionnaire_Clients"
         mc:Ignorable="d"
         Title="Gestion de clients" Height="450" Width="800">
-    <Grid>
 
-    </Grid>
+    <DockPanel>
+        <Grid DockPanel.Dock="Top">
+            <StatusBar>
+                <StatusBarItem>
+                    <TextBlock Text="Fichier"></TextBlock>
+                </StatusBarItem>
+                <StatusBarItem>
+                    <TextBlock Text="Édition"></TextBlock>
+                </StatusBarItem>
+                <StatusBarItem>
+                    <TextBlock Text="Affichage"></TextBlock>
+                </StatusBarItem>
+            </StatusBar>
+        </Grid>
+        <Grid DockPanel.Dock="Right" Width="596" Height="353" RenderTransformOrigin="0.502,0.512">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+
+            </Grid.RowDefinitions>
+
+            <!--Prenom-->
+            <Label Grid.Row="0" Grid.Column="0" Margin="6">
+                <TextBlock Text="Prénom:" Height="22"></TextBlock>
+            </Label>
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="6"></TextBox>
+            <!--Nom-->
+            <Label Grid.Row="0" Grid.Column="2" Margin="6">
+                <TextBlock Text="Nom:" Height="22"></TextBlock>
+            </Label>
+            <TextBox Grid.Row="0" Grid.Column="4" Margin="6"></TextBox>
+
+            <!--Addresse-->
+            <Label Grid.Row="1" Grid.Column="0" Margin="6">
+                <TextBlock Text="Addresse:" Height="22"></TextBlock>
+            </Label>
+            <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="6"></TextBox>
+            <!--Ville-->
+            <Label Grid.Row="2" Grid.Column="0" Margin="6">
+                <TextBlock Text="Ville:" Height="22"></TextBlock>
+            </Label>
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="6"></TextBox>
+
+            <!--Province-->
+            <Label Grid.Row="2" Grid.Column="2" Margin="6">
+                <TextBlock Text="Province:" Height="22"></TextBlock>
+            </Label>
+            <TextBox Grid.Row="2" Grid.Column="3" Margin="6"></TextBox>
+            <!--Code-->
+            <Label Grid.Row="3" Grid.Column="0" Margin="6">
+                <TextBlock Text="Code postal:" Height="22"></TextBlock>
+            </Label>
+            <TextBox Grid.Row="3" Grid.Column="1" Margin="6"></TextBox>
+
+            <!--Contact-->
+            <Label Grid.Row="4" Grid.Column="0" Margin="6">
+                <TextBlock Text="Contact:" Height="22"></TextBlock>
+            </Label>
+            <TextBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Margin="6"></TextBox>
+
+            <!--Supprimer-->
+            <Button Grid.Row="5" Grid.Column="4" Margin="6">Supprimer client</Button>
+
+            <!--Image-->
+            <Image Grid.Row="6" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="2"></Image>
+        </Grid>
+        <Grid DockPanel.Dock="Left" Grid.Column="1" Width="200">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0">
+                <TextBlock Text="Liste des clients"></TextBlock>
+            </Label>
+            <StackPanel Grid.Row="0" Grid.Column="1">
+                <Button >Nouveau client</Button>
+            </StackPanel>
+
+            <ListView Grid.ColumnSpan="2" Margin="0,26,0,35" Grid.RowSpan="3"/>
+
+            <StatusBar Grid.Row="2" Grid.ColumnSpan="2" Margin="0,107,-599,0">
+                <Label>
+                    <TextBlock Text="Client sélectionné :"></TextBlock>
+                </Label>
+                <Label>
+                    <TextBlock Text="{Binding CurrentClient.Info}"></TextBlock>
+                </Label>
+            </StatusBar>
+        </Grid>
+
+
+    </DockPanel>
+
 </Window>

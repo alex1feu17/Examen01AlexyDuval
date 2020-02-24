@@ -1,0 +1,17 @@
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\bin\Debug\netcoreapp3.0\Gestionnaire_Clients.exe
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\bin\Debug\netcoreapp3.0\Gestionnaire_Clients.deps.json
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\bin\Debug\netcoreapp3.0\Gestionnaire_Clients.runtimeconfig.json
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\bin\Debug\netcoreapp3.0\Gestionnaire_Clients.runtimeconfig.dev.json
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\bin\Debug\netcoreapp3.0\Gestionnaire_Clients.dll
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\bin\Debug\netcoreapp3.0\Gestionnaire_Clients.pdb
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\obj\Debug\netcoreapp3.0\Gestionnaire_Clients.csprojAssemblyReference.cache
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\obj\Debug\netcoreapp3.0\MainWindow.g.cs
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\obj\Debug\netcoreapp3.0\App.g.cs
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\obj\Debug\netcoreapp3.0\Gestionnaire_Clients_MarkupCompile.cache
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\obj\Debug\netcoreapp3.0\Gestionnaire_Clients_MarkupCompile.lref
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\obj\Debug\netcoreapp3.0\MainWindow.baml
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\obj\Debug\netcoreapp3.0\Gestionnaire_Clients.g.resources
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\obj\Debug\netcoreapp3.0\Gestionnaire_Clients.AssemblyInfoInputs.cache
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\obj\Debug\netcoreapp3.0\Gestionnaire_Clients.AssemblyInfo.cs
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\obj\Debug\netcoreapp3.0\Gestionnaire_Clients.dll
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\obj\Debug\netcoreapp3.0\Gestionnaire_Clients.pdb
