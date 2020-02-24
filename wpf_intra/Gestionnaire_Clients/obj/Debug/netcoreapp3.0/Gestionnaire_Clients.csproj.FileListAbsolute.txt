@@ -15,3 +15,8 @@ C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\obj\Debug\netcoreapp3.0\Gestio
 C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\obj\Debug\netcoreapp3.0\Gestionnaire_Clients.AssemblyInfo.cs
 C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\obj\Debug\netcoreapp3.0\Gestionnaire_Clients.dll
 C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\obj\Debug\netcoreapp3.0\Gestionnaire_Clients.pdb
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\bin\Debug\netcoreapp3.0\intra_models.dll
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\bin\Debug\netcoreapp3.0\intra_models.pdb
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\obj\Debug\netcoreapp3.0\Gestionnaire_Clients.csproj.CopyComplete
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\bin\Debug\netcoreapp3.0\image\image1.png
+C:\0ss_intra\Duval\wpf_intra\Gestionnaire_Clients\obj\Debug\netcoreapp3.0\Gestionnaire_Clients_Content.g.cs

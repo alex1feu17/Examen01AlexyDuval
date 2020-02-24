@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 
 namespace intra_models
 {
-    public class Class1 : INotifyPropertyChanged
+    public class Client : INotifyPropertyChanged
     {
         private string name;
         private string lastname;
@@ -23,15 +23,17 @@ namespace intra_models
             {
                 name = value;
                 OnPropertyChanged();
+                OnPropertyChanged(nameof(Info));
             }
         }
-        public string Lastname
+        public string LastName
         {
             get => lastname;
             set
             {
                 lastname = value;
                 OnPropertyChanged();
+                OnPropertyChanged(nameof(Info));
             }
         }
         public string Address
@@ -88,7 +90,7 @@ namespace intra_models
                 OnPropertyChanged();
             }
         }
-        public string Info => $"{Name} : {Lastname}";
+        public string Info => $"{Name} : {LastName}";
 
 
         public event PropertyChangedEventHandler PropertyChanged;

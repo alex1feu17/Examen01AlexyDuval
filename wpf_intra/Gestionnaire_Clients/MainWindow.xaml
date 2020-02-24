@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gestionnaire_Clients"
         mc:Ignorable="d"
-        Title="Gestion de clients" Height="450" Width="800">
+        Title="Gestion de clients" Height="450" Width="800" DataContext="{Binding RelativeSource={RelativeSource Self}}">
 
     <DockPanel>
         <Grid DockPanel.Dock="Top">
@@ -46,46 +46,46 @@
             <Label Grid.Row="0" Grid.Column="0" Margin="6">
                 <TextBlock Text="Prénom:" Height="22"></TextBlock>
             </Label>
-            <TextBox Grid.Row="0" Grid.Column="1" Margin="6"></TextBox>
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="6" Text="{Binding CurrentClient.Name}"></TextBox>
             <!--Nom-->
             <Label Grid.Row="0" Grid.Column="2" Margin="6">
                 <TextBlock Text="Nom:" Height="22"></TextBlock>
             </Label>
-            <TextBox Grid.Row="0" Grid.Column="4" Margin="6"></TextBox>
+            <TextBox Grid.Row="0" Grid.Column="4" Margin="6" Text="{Binding CurrentClient.LastName}"></TextBox>
 
             <!--Addresse-->
             <Label Grid.Row="1" Grid.Column="0" Margin="6">
                 <TextBlock Text="Addresse:" Height="22"></TextBlock>
             </Label>
-            <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="6"></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="6" Text="{Binding CurrentClient.Address}"></TextBox>
             <!--Ville-->
             <Label Grid.Row="2" Grid.Column="0" Margin="6">
                 <TextBlock Text="Ville:" Height="22"></TextBlock>
             </Label>
-            <TextBox Grid.Row="2" Grid.Column="1" Margin="6"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="6" Text="{Binding CurrentClient.City}"></TextBox>
 
             <!--Province-->
             <Label Grid.Row="2" Grid.Column="2" Margin="6">
                 <TextBlock Text="Province:" Height="22"></TextBlock>
             </Label>
-            <TextBox Grid.Row="2" Grid.Column="3" Margin="6"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="3" Margin="6" Text="{Binding CurrentClient.Province}"></TextBox>
             <!--Code-->
             <Label Grid.Row="3" Grid.Column="0" Margin="6">
                 <TextBlock Text="Code postal:" Height="22"></TextBlock>
             </Label>
-            <TextBox Grid.Row="3" Grid.Column="1" Margin="6"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="1" Margin="6" Text="{Binding CurrentClient.PostalCode}"></TextBox>
 
             <!--Contact-->
             <Label Grid.Row="4" Grid.Column="0" Margin="6">
                 <TextBlock Text="Contact:" Height="22"></TextBlock>
             </Label>
-            <TextBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Margin="6"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Margin="6" Text="{Binding CurrentClient.ContactInfo}"></TextBox>
 
             <!--Supprimer-->
             <Button Grid.Row="5" Grid.Column="4" Margin="6">Supprimer client</Button>
 
             <!--Image-->
-            <Image Grid.Row="6" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="2"></Image>
+            <Image Grid.Row="6" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="2" Source="{Binding CurrentClient.PicturePath}"></Image>
         </Grid>
         <Grid DockPanel.Dock="Left" Grid.Column="1" Width="200">
             <Grid.ColumnDefinitions>
@@ -101,12 +101,18 @@
                 <TextBlock Text="Liste des clients"></TextBlock>
             </Label>
             <StackPanel Grid.Row="0" Grid.Column="1">
-                <Button >Nouveau client </Button>
+                <Button Click="Button_Click">Nouveau client </Button>
             </StackPanel>
 
-            <ListView Grid.ColumnSpan="2" Margin="0,26,0,35" Grid.RowSpan="3"/>
+            <ListView Grid.ColumnSpan="2" Margin="0,26,0,35" Grid.RowSpan="3"  ItemsSource="{Binding Client}" SelectedItem="{Binding CurrentClient}" SelectionChanged="ListView_SelectionChanged">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Info}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
-            <StatusBar Grid.Row="2" Grid.ColumnSpan="2" Margin="0,107,-599,0">
+            <StatusBar Grid.Row="2" Grid.ColumnSpan="2" Margin="0,102,-599,5">
                 <Label>
                     <TextBlock Text="Client sélectionné :"></TextBlock>
                 </Label>
